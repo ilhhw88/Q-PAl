@@ -1,0 +1,11 @@
+{% extends 'base.html' %} <!-- show base.html. this is extend method-->
+
+{% block content %} <!-- the content of block content to endblock content will be replaced into above block-endblock contect -->
+<h1> Sign Up</h1>
+
+<form method = "post" enctype="multipart/form-data">
+    {% csrf_token %} 
+    {{ form.as_p }}
+    <button type = "submit">Sign up</button>
+</form>
+{% endblock content %}
