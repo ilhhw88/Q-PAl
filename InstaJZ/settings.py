@@ -26,7 +26,7 @@ SECRET_KEY = 'po_(cvk=jgd@5(&5^nmy4jb(vyc+=#0i)s#wgh+u12p2d=uw4e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'whitenoise, runserver_nostatic'
     'django.contrib.staticfiles',
     'Insta',
 ]
