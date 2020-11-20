@@ -31,6 +31,7 @@ class InstaUser(AbstractUser):
 
     def __str__(self):
         return self.username
+        
 #creator(user A) follows following(user B)
 class UserConnection(models.Model):
     created = models.DateTimeField(auto_now_add=True, editable=False)
